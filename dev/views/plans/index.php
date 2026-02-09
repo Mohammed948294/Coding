@@ -1,0 +1,1 @@
+<h4>الباقات والوحدات</h4><table class="table table-bordered bg-white"><tr><th>الباقة</th><?php foreach($modules as $m):?><th><?=$m['key_name']?></th><?php endforeach;?></tr><?php foreach($plans as $p):?><tr><td><?=$p['name']?></td><?php foreach($modules as $m):?><td><?=($map[$p['id']][$m['id']]??0)?'✅':'—'?></td><?php endforeach;?></tr><?php endforeach;?></table>
